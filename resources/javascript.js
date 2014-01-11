@@ -1,3 +1,5 @@
-// Your Javascript will go here!
-
-alert('hey im in an external javascript')
+function replaceName() {
+    var myNewName = window.prompt('Pick a new name!');
+    document.getElementById('user-name').innerHTML = myNewName;
+  }
+   document.onclick = replaceName;
